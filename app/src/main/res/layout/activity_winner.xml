@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".photoHunt.WinnerActivity">
+
+
+    <LinearLayout
+        android:id="@+id/cubeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <com.example.macc_project.graphics.MyGLSurfaceView
+        android:id="@+id/myGLSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="200dp"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/scoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="@font/electrolize"
+        android:text="Your final score is:"
+        android:textColor="@color/green"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="461dp"
+        android:fontFamily="@font/electrolize"
+        android:text="30"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="470dp"
+        android:fontFamily="@font/electrolize"
+        android:text="pts"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/electrolize"
+            android:text="Back to Home Page"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</RelativeLayout>
